@@ -1,0 +1,5 @@
+<% @contestants.each do |contestant| %>
+  <p>Name: <%= link_to contestant.name, contestant_path(contestant) %>,
+  Age: <%= contestant.age %>,
+  Hometown: <%= contestant.hometown %></p>
+<% end %>
