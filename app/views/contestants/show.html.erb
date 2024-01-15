@@ -1,0 +1,8 @@
+<%= @contestant.name %>
+<p>Season #<%= @contestant.season_number %></p>
+<p>Season Description: <%= @contestant.season_description %></p>
+
+<p>Outings: <% @contestant.outings.each do |outing| %>
+  <%= link_to outing.name, outing_path(outing) %>
+  <% end %>
+</p>
