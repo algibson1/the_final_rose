@@ -1,0 +1,6 @@
+<% @outing.contestants.each do |contestant| %>
+  <section id="contestant-<%= contestant.id %>">
+  <%= contestant.name %>
+  <%= link_to "Remove", "/outings/#{@outing.id}/contestants/#{contestant.id}", method: :delete %>
+  </section>
+<% end %>
